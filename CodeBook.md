@@ -1,11 +1,4 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf200
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red52\green110\blue183;}
-\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720\sl500\sa300
-
-\f0\fs30 \cf2 Introduction\
+ Introduction\
 This file describes the data, the variables, and the work that has been performed to clean up the data.\
 Data Set Description\
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.\
@@ -35,5 +28,4 @@ bigData_mean<-sapply(bigData,mean,na.rm=TRUE) bigData_sd<-sapply(bigData,sd,na.r
 Creates a second, independent tidy data set with the average of each variable for each activity and each subject.\
 Finaly the desired result, a tidy data table is created with the average of each measurement per activity/subject combination. The new dataset is saved in tidy.csv file.\
 \pard\pardeftab720\sl500
-\cf2 DT <- data.table(bigData) tidy<-DT[,lapply(.SD,mean),by="Activity,Subject"] write.table(tidy,file="tidy.csv",sep=",",col.names = NA)\
-}
+\cf2 DT <- data.table(bigData) tidy<-DT[,lapply(.SD,mean),by="Activity,Subject"] write.table(tidy,file="tidy.csv",sep=",",col.names = NA)

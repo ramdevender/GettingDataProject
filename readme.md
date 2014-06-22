@@ -1,11 +1,4 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf200
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red38\green38\blue38;}
-\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720\sl500\sa300
-
-\f0\fs30 \cf2 Introduction\
+Introduction\
 This repository is hosting the R code for the assignment of the DataScience track's "Getting and Cleaning Data" course which will be peer assessed.\
 The purpose of this project is to demonstrate the collection, work with, and cleaning of this data set. Tidy data have been prepared so can be used for later analysis.\
 Data Set\
